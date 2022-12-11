@@ -1,0 +1,9 @@
+I1 = imread('16.png'); %image1
+I2 = imread('17.png'); %image2
+x = single(I1(:)); %image1 ---> image1 vector
+y = single(I2(:)); %image2 ---> image2 vector
+xy = dot(x,y); %dot product of two images
+nx = norm(x); %magnitude of image1
+ny = norm(y); %magnitude of image2
+nxy = nx*ny; % multiplication of image 1 & 2 magnitudes
+Cs = xy/nxy %cosine value
